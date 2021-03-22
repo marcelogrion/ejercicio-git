@@ -31,6 +31,9 @@ class Peliculas extends Component {
     favorita = (pelicula) => {
         console.log('favorita Marcada');
         console.log(pelicula);
+        this.setState({
+            favorita: pelicula
+        })
 
     }
     render() {
