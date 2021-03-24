@@ -3,9 +3,10 @@ import React, { Component } from 'react';
 class Pelicula extends Component {
 
 
-marcar = () => {
-    this.props.marcarFavorita(this.props.pelicula);
-}
+    marcar = () => {
+
+        this.props.marcarFavorita(this.props.pelicula, this.props.indice);
+    }
 
     render() {
         //AL CREAR ESTA FORMA, QUE SE LLAMA DESTRUCTURING, ME EVITO ESCRIBIR "PELICULA"ABAJO
@@ -29,6 +30,7 @@ marcar = () => {
                 <button onClick={this.marcar}>
                     marcar favorita
                 </button>
+
                 <div className="clearfix"></div>
             </article>
         )
