@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
+
 class MiComponente extends Component {
+
     render() {
         var receta = {
             nombre: 'pizza',
@@ -9,25 +11,25 @@ class MiComponente extends Component {
         }
         return (
             <div className="mi-componente">
+                
                 <h1>{receta.nombre}</h1>
                 <h1>{receta.calorias}</h1>
                 <ol>
                     {
                         receta.ingrediente.map((ingrediente, i) => {
                             return (
-                            <li key={i}>
+                                <li key={i}>
 
                                     {ingrediente}
 
-                            </li>
-                        );
-                        })
-
+                                </li>
+                            );
+                        }
+                        )
                     }
                 </ol>
                 <hr />
-
-            </div >
+            </div>
         );
     }
 }

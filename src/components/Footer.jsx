@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-const Footer = function () {
+const Footer = () => {
 
     return (
 
